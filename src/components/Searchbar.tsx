@@ -1,7 +1,6 @@
 import React from "react";
 import { Input } from "antd";
 import type { SearchProps } from "antd/es/input/Search";
-import { searchNews } from "../utils/axioshelper";
 
 const { Search } = Input;
 interface SearchbarProps {

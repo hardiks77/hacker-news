@@ -11,6 +11,7 @@ export default defineConfig({
         "@tanstack/react-query",
         "zustand",
         "axios",
+        "antd",
       ],
     },
   },

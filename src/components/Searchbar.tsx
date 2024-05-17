@@ -25,7 +25,7 @@ const Searchbar: React.FC<SearchbarProps> = ({
             resetFn();
           }
         }}
-        style={{ width: 400, margin: "20px" }}
+        style={{ width: 300, margin: "20px" }}
       />
     </>
   );

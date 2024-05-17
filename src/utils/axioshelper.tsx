@@ -17,7 +17,7 @@ export const searchNews = (
   setNews: (items: NewsItem[]) => void
 ): Promise<void> => {
   return axios
-    .get(`http://hn.algolia.com/api/v1/search?query=${query}&tags=story`)
+    .get(`https://hn.algolia.com/api/v1/search?query=${query}&tags=story`)
     .then((res) => {
       const persons = res.data.hits;
       setNews(res.data.hits);
@@ -27,7 +27,7 @@ export const searchNews = (
 
 export const fetchItem = (objectID: string, setDetailNews): Promise<void> => {
   return axios
-    .get(`http://hn.algolia.com/api/v1/items/${objectID}`)
+    .get(`https://hn.algolia.com/api/v1/items/${objectID}`)
     .then((res) => {
       const persons = res.data;
       setDetailNews(res.data);

@@ -21,7 +21,6 @@ export const searchNews = (
     .then((res) => {
       const persons = res.data.hits;
       setNews(res.data.hits);
-      console.log("persons: ", persons);
     });
 };
 
@@ -31,6 +30,5 @@ export const fetchItem = (objectID: string, setDetailNews): Promise<void> => {
     .then((res) => {
       const persons = res.data;
       setDetailNews(res.data);
-      console.log("item: ", persons);
     });
 };

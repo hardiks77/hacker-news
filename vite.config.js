@@ -12,12 +12,8 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      external: [
-        'react-router-dom',
-        '@tanstack/react-query',
-        'zustand',
-        'axios',
-      ],
+      // Do not externalize dependencies that are used in the frontend
+      external: [],
     },
   },
 });
